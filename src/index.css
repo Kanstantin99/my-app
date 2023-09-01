@@ -1,13 +1,182 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e7f6ff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper {
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  max-width: 1080px;
+  margin: 50px auto;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.drawer {
+  position: absolute;
+
+  width: 420px;
+  height: 100%;
+  right: 0;
+  background: #ffffff;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.01);
+  padding: 30px;
+}
+.buscet {
+  margin: 0;
+  margin-bottom: 30px;
+}
+.cartItem {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.sneakerInCart {
+  margin-right: 20px;
+}
+.descriptionInCart {
+  margin-bottom: 5px;
+}
+.priceInCart {
+  font-size: 14px;
+}
+.remoteBtn {
+  opacity: 0.45;
+  cursor: pointer;
+}
+.remoteBtn:hover {
+  opacity: 1;
+}
+.confirmPay {
+  width: 100%;
+  height: 55px;
+  background: #9dd558;
+  border-radius: 18px;
+  border: 0;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  border-bottom: 1px solid #f4f4f4;
+}
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 20px;
+}
+.reactSneakers {
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+
+.headerRight {
+  display: flex;
+  cursor: pointer;
+}
+.info {
+  margin-right: 30px;
+  cursor: pointer;
+}
+.header {
+  align-items: center;
+}
+.upContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.searchInput {
+  border: 0;
+  padding: 13px;
+}
+.content {
+  padding: 40px;
+}
+.searchBlock {
+  border: 1px solid #f3f3f3;
+  display: flex;
+  border-radius: 10px;
+  padding: 0 15px;
+}
+.card {
+  border: 1px solid #f8f8f8;
+  padding: 30px;
+  width: 220px;
+  border-radius: 40px;
+  transition: 0.2s ease-in-out;
+  transform: 0.2s ease-in-out;
+}
+.card:hover {
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.06);
+  transform: translateY(-5px);
+}
+.description {
+  font-weight: 400;
+  font-size: 14px;
+}
+.cardBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button {
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.price {
+  font-size: 13px;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+.priceNumber {
+  font-size: 13px;
+}
+.sneakers {
+  display: flex;
+  flex-wrap: wrap;
+}
+.like {
+  position: absolute;
+  cursor: pointer;
 }
