@@ -27,6 +27,7 @@ body {
 .drawer {
   position: absolute;
 
+  overflow: scroll;
   width: 420px;
   height: 100%;
   right: 0;
@@ -54,6 +55,8 @@ body {
   font-size: 14px;
 }
 .remoteBtn {
+  width: 15px;
+  height: 15px;
   opacity: 0.45;
   cursor: pointer;
 }
@@ -61,7 +64,7 @@ body {
   opacity: 1;
 }
 .confirmPay {
-  width: 100%;
+  width: 90%;
   height: 55px;
   background: #9dd558;
   border-radius: 18px;
@@ -179,4 +182,30 @@ li {
 .like {
   position: absolute;
   cursor: pointer;
+}
+.favorite {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.cartEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.emptyCart {
+  margin-bottom: 20px;
+  width: 120px;
+  height: 120px;
+}
+.greenButton {
+  width: 290px;
+  height: 20px;
+}
+Link {
+  text-decoration: none;
 }
