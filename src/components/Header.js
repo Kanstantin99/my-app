@@ -32,7 +32,7 @@ function Header({ onClickCart, cartItems }) {
       <ul className="headerRight">
         <li onClick={onClickCart} className="info">
           <img width={18} height={18} src="/img/cart.svg" />
-          <span> rub: {totalPrice}</span>
+          <span> {totalPrice}</span>
         </li>
 
         <li className="info">
